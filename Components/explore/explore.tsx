@@ -2,7 +2,6 @@
 import Image from "next/image";
 import chair from "@/Components/public/chair3.svg"
 import chair1 from "@/Components/public/chair1.svg"
-import chair2 from "@/Components/public/chair2.svg"
 import chair6 from "@/Components/public/chair6.svg"
 import chair4 from "@/Components/public/chair4.svg"
 
