@@ -9,9 +9,9 @@ import newicon from   "@/Components/public/new.svg"
 import sale from "@/Components/public/sale.svg"
 import cart1 from "@/Components/public/cart1.svg"
 import cartall from "@/Components/public/cartall.svg"
-import cata1 from "@/Components/public/cata1.svg"
+
 import cata2 from "@/Components/public/cata2.svg"
-import cata3 from "@/Components/public/cata3.svg"
+
 import chair5 from "@/Components/public/chair5.svg"
 import chair6 from "@/Components/public/chair6.svg"
 import chair7 from "@/Components/public/chair7.svg"
