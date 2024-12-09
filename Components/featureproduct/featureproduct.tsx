@@ -1,7 +1,3 @@
-
-
-
-
 import Image from "next/image";
 import chair1 from "@/Components/public/chair1.svg";
 import chair2 from "@/Components/public/chair2.svg";
@@ -15,65 +11,101 @@ import cata1 from "@/Components/public/cata1.svg";
 import cata2 from "@/Components/public/cata2.svg";
 import cata3 from "@/Components/public/cata3.svg";
 
-export default function Feature() {
-  return (
-    <div className="px-4">
-      {/* Featured Products Section */}
-      <div className="max-w-screen-xl mx-auto mt-12">
-        <h1 className="text-2xl sm:text-3xl font-bold text-[#272343] mb-8">
-          Featured Products
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {/* Product Card */}
-          {[{ img: chair1, icon: newicon, price: "$20", name: "Library Stool Chair", cart: cart1 },
-            { img: chair2, icon: sale, price: "$20", name: "Library Stool Chair", salePrice: "$39", cart: cartall },
-            { img: chair3, price: "$20", name: "Library Stool Chair", cart: cartall },
-            { img: chair4, price: "$20", name: "Library Stool Chair", cart: cartall },
-          ].map((product, index) => (
-            <div key={index} className="relative bg-white shadow-md rounded-lg overflow-hidden">
-              {product.icon && (
-                <Image src={product.icon} alt="icon" className="absolute top-2 left-2 z-10" />
-              )}
-              <Image src={product.img} alt={product.name} className="w-full" />
-              <div className="flex justify-between items-center p-4">
-                <div>
-                  <p className="text-lg font-bold text-[#007580]">{product.name}</p>
-                  <div className="flex items-center space-x-2">
-                    <p className="text-lg text-[#272343]">{product.price}</p>
-                    {product.salePrice && (
-                      <p className="text-sm line-through text-[#9A9CAA]">{product.salePrice}</p>
-                    )}
-                  </div>
-                </div>
-                <Image src={product.cart} alt="cart" className="w-6 h-6" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Top Categories Section */}
-      <div className="max-w-screen-xl mx-auto mt-16">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-8">Top Categories</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[{ img: cata1, name: "Wing Chair", count: "3,584 Products" },
-            { img: cata2, name: "Wooden Chair", count: "157 Products" },
-            { img: cata3, name: "Desk Chair", count: "154 Products" },
-          ].map((category, index) => (
-            <div key={index} className="relative group rounded-lg overflow-hidden">
-              <Image
-                src={category.img}
-                alt={category.name}
-                className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white p-4">
-                <h1 className="text-lg font-bold">{category.name}</h1>
-                <p className="text-sm">{category.count}</p>
+
+
+
+
+
+
+export default function Feature(){
+  return(
+      <div>
+          <div className="w-[1920px] h-[461px] mt-[120px] ">
+              <h1 className="text-[32px] leading-[35px] text-[#272343] ml-[150px]">Featured Products</h1>
+              <div className="flex ml-[100px] ">
+                  <div className="w-[312px] h-[377px] mt-[10px] ml-[50px]  ">
+                  <Image src={newicon} alt="icon" className="absolute ml-[10px] mt-[10px]"/>
+                      <Image src={chair1} alt="chair"/>
+                      <div className="flex">
+                      <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
+                          <p className="font-bold text-[16px] leading-[20px] text-[#007580]">Library Stool Chair</p>
+                          <p className="text-[18px] text-[#272343]">$20</p>
+                      </div>
+                      <Image src={cart1} alt="cart" className="ml-2"/>
+                      </div>
+                     
+                      
+                     
+                  </div>
+                  <div className="w-[312px] h-[377px] mt-[10px] ml-[50px] ">
+                      <Image src={sale} alt="sale" className="absolute ml-[10px] mt-[10px]"/>
+                      <Image src={chair2} alt="chair"/>
+                      <div className="flex">
+                      <div className="w-[256px] h-[51px] mt-[10px] gap-[10px]">
+                          <p className="font-bold text-[16px] leading-[20px] ">Library Stool Chair</p>
+                          <div className="flex">
+                          <p className="text-[18px] text-[#272343]">$20</p>
+                          <p className="line-through text-[#9A9CAA] ml-3 "> $39</p>
+                          </div>
+                      </div>
+                      <Image src={cartall} alt="cart" className="ml-2"/>
+                      </div>
+                     
+                  </div>
+                  <div className="w-[312px] h-[377px] mt-[10px] ml-[50px]">
+                  <Image src={chair3} alt="chair"/>
+                  <div className="flex">
+                      <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
+                          <p className="font-bold text-[16px] leading-[20px] ">Library Stool Chair</p>
+                          <p className="text-[18px] text-[#272343]">$20</p>
+                      </div>
+                      <Image src={cartall} alt="cart" className="ml-2"/>
+                      </div>
+                     
+                  </div>
+                  <div className="w-[312px] h-[377px] mt-[10px] ml-[50px] ">
+                  <Image src={chair4} alt="chair"/>
+                  <div className="flex">
+                      <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
+                          <p className="font-bold text-[16px] leading-[20px]">Library Stool Chair</p>
+                          <p className="text-[18px] text-[#272343]">$20</p>
+                      </div>
+                      <Image src={cartall} alt="cart" className="ml-2"/>
+                      </div>
+                     
+                  </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+              </div>
+              {/* Top categories */}
+              <div className="w-[2216px] h-[509px] mt-[20px] ml-[10px] ">
+                  <p className="text-[32px] font-bold mt-[10px] ml-[150px]" >Top categories</p>
+                  <div className="flex justify-center items-center gap-[10px] mr-[720px] ml-[130px] ">
+                  <div className="w-[424px] h-[424px] mt-[40px] ml-200px] bg-gray-700">
+                  <div className="w-[424px] h-[85px] bg-[#000000B2] absolute mt-[335px] opacity-100">
+                      <h1  className="text-white font-bold ml-2 mt-4">Wing Chair</h1>
+                      <p className="text-white ml-2">3,584 Products</p>
+                  </div>
+                      <Image src={cata1} alt="cata1"/>
+                  
+                  </div>
+                  <div className="w-[424px] h-[424px] mt-[40px] ml-200px] bg-gray-700">
+                  <div className="w-[424px] h-[85px] bg-[#000000B2] absolute mt-[335px] opacity-100">
+                  <h1 className="text-white font-bold ml-2 mt-4">Wooden Chair</h1>
+                  <p className="text-white ml-2">157 Products</p>
+                  </div>
+                  <Image src={cata2} alt="cata2"/>
+                  </div>
+                  <div className="w-[424px] h-[424px] mt-[40px] ml-200px] bg-gray-700">
+                  <div className="w-[424px] h-[85px] bg-[#000000B2] absolute mt-[335px] opacity-100">
+                  <h1  className="text-white font-bold ml-2 mt-4">Desk Chair</h1>
+                  <p className="text-white ml-2">154 Products</p>
+                  </div>
+                  <Image src={cata3} alt="cata3"/>
+            
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  )
+                  }
