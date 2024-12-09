@@ -7,7 +7,7 @@ import chair1 from "@/Components/public/chair1.svg";
 import chair6 from "@/Components/public/chair6.svg";
 import chair4 from "@/Components/public/chair4.svg";
 
-export default function () {
+export default function Explore () {
   return (
     <div className="px-6 py-16">
       {/* Vertical Text Section */}
