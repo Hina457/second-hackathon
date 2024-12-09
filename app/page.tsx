@@ -10,8 +10,9 @@ export default function Main(){
     <div>
     <Hero/>
     <Feature/>
-    <Ourproduct/>
     <Explore/>
+    <Ourproduct/>
+  
     
  
     </div>

@@ -1,135 +1,68 @@
 
-import Image from "next/image"
-import chair1 from "@/Components/public/chair1.svg"
-import chair2 from "@/Components/public/chair2.svg"
-import chair3 from "@/Components/public/chair3.svg"
-import chair4 from "@/Components/public/chair4.svg"
-import newicon from   "@/Components/public/new.svg"
-import sale from "@/Components/public/sale.svg"
-import cart1 from "@/Components/public/cart1.svg"
-import cartall from "@/Components/public/cartall.svg"
-import chair5 from "@/Components/public/chair5.svg"
-import chair6 from "@/Components/public/chair6.svg"
-import chair7 from "@/Components/public/chair7.svg"
 
-export default function Ourproduct(){
-return(
-    <div>
-        <div className="w-[1320px] h-auto ml-[110px] pt-[40px]">
-            <p className="w-[205] h-[34px] mt-[16px] ml-[557px] text-[32px] text-[#272343]">Our Products</p>
-            <div className="flex gap-[20px] ml-[100px]">
 
-            <div className="w-[312px] h-[377px] mt-[125px] ">
-            <Image src={newicon} alt="icon" className="absolute ml-[10px] mt-[10px]"/>
-                        <Image src={chair1} alt="chair"/>
-                        <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
-                            <p className="font-bold text-[16px] leading-[20px] text-[#007580]">Library Stool Chair</p>
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                        </div>
-                        <Image src={cart1} alt="cart" className="ml-2"/>
-                        </div>
-            </div>
-            {/* box2 */}
-            <div className="w-[312px] h-[377px] mt-[125px] ">
-            <Image src={sale} alt="sale" className="absolute ml-[10px] mt-[10px]"/>
-                        <Image src={chair2} alt="chair"/>
-                        <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px]">
-                            <p className="font-bold text-[16px] leading-[20px] ">Library Stool Chair</p>
-                            <div className="flex">
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                            <p className="line-through text-[#9A9CAA] ml-3 "> $39</p>
-                            </div>
-                        </div>
-                        <Image src={cartall} alt="cart" className="ml-2"/>
-                        </div>
 
-            </div>
-            {/* box3 */}
-            <div className="w-[312px] h-[377px] mt-[125px]">
-            <Image src={chair3} alt="chair"/>
-                    <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
-                            <p className="font-bold text-[16px] leading-[20px] ">Library Stool Chair</p>
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                        </div>
-                        <Image src={cartall} alt="cart" className="ml-2"/>
-                        </div>
-                       
-            </div>
-            {/* box 4 */}
-            <div className="w-[312px] h-[377px] mt-[125px] ">
-            <Image src={chair4} alt="chair"/>
-                    <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
-                            <p className="font-bold text-[16px] leading-[20px]">Library Stool Chair</p>
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                        </div>
-                        <Image src={cartall} alt="cart" className="ml-2"/>
-                        </div>
-                       
-                    </div>
+import Image from "next/image";
+import chair1 from "@/Components/public/chair1.svg";
+import chair2 from "@/Components/public/chair2.svg";
+import chair3 from "@/Components/public/chair3.svg";
+import chair4 from "@/Components/public/chair4.svg";
+import newicon from "@/Components/public/new.svg";
+import sale from "@/Components/public/sale.svg";
+import cart1 from "@/Components/public/cart1.svg";
+import cartall from "@/Components/public/cartall.svg";
+import chair5 from "@/Components/public/chair5.svg";
+import chair6 from "@/Components/public/chair6.svg";
+import chair7 from "@/Components/public/chair7.svg";
+
+export default function OurProduct() {
+  const products = [
+    { img: chair1, icon: newicon, title: "Library Stool Chair", price: "$20", cart: cart1 },
+    { img: chair2, icon: sale, title: "Library Stool Chair", price: "$20", oldPrice: "$39", cart: cartall },
+    { img: chair3, title: "Library Stool Chair", price: "$20", cart: cartall },
+    { img: chair4, title: "Library Stool Chair", price: "$20", cart: cartall },
+    { img: chair5, icon: newicon, title: "Library Stool Chair", price: "$20", cart: cart1 },
+    { img: chair6, icon: sale, title: "Library Stool Chair", price: "$20", oldPrice: "$39", cart: cartall },
+    { img: chair7, title: "Library Stool Chair", price: "$20", cart: cartall },
+    { img: chair1, title: "Library Stool Chair", price: "$20", cart: cartall },
+  ];
+
+  return (
+    <div className="px-6 py-12">
+      {/* Section Header */}
+      <div className="text-center">
+        <h1 className="text-2xl lg:text-3xl font-bold text-[#272343]">Our Products</h1>
+      </div>
+
+      {/* Products Grid */}
+      <div className="max-w-screen-xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="relative bg-white shadow-md rounded-lg overflow-hidden transition-transform hover:scale-105"
+          >
+            {/* Badge/Icon */}
+            {product.icon && (
+              <Image src={product.icon} alt="icon" className="absolute top-2 left-2 w-8 h-8" />
+            )}
+            {/* Product Image */}
+            <Image src={product.img} alt="chair" className="w-full h-48 object-cover" />
+            {/* Product Details */}
+            <div className="p-4 flex justify-between items-center">
+              <div>
+                <p className="font-bold text-lg text-[#007580]">{product.title}</p>
+                <div className="flex items-center">
+                  <p className="text-xl text-[#272343]">{product.price}</p>
+                  {product.oldPrice && (
+                    <p className="ml-2 text-sm text-[#9A9CAA] line-through">{product.oldPrice}</p>
+                  )}
                 </div>
-
-            
-            {/* second section  */}
-            <div className="flex gap-[20px] ml-[100px]">
-            <div className="w-[312px] h-[377px] mt-[125px] ">
-            <Image src={newicon} alt="icon" className="absolute ml-[10px] mt-[10px]"/>
-                        <Image src={chair5} alt="chair"/>
-                        <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
-                            <p className="font-bold text-[16px] leading-[20px] text-[#007580]">Library Stool Chair</p>
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                        </div>
-                        <Image src={cart1} alt="cart" className="ml-2"/>
-                        </div>
+              </div>
+              <Image src={product.cart} alt="cart" className="w-8 h-8" />
             </div>
-            {/* box2 */}
-            <div className="w-[312px] h-[377px] mt-[125px] ">
-            <Image src={sale} alt="sale" className="absolute ml-[10px] mt-[10px]"/>
-                        <Image src={chair6} alt="chair"/>
-                        <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px]">
-                            <p className="font-bold text-[16px] leading-[20px] ">Library Stool Chair</p>
-                            <div className="flex">
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                            <p className="line-through text-[#9A9CAA] ml-3 "> $39</p>
-                            </div>
-                        </div>
-                        <Image src={cartall} alt="cart" className="ml-2"/>
-                        </div>
-
-            </div>
-            {/* box3 */}
-            <div className="w-[312px] h-[377px] mt-[125px] ">
-            <Image src={chair7} alt="chair"/>
-                    <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
-                            <p className="font-bold text-[16px] leading-[20px] ">Library Stool Chair</p>
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                        </div>
-                        <Image src={cartall} alt="cart" className="ml-2"/>
-                        </div>
-                       
-            </div>
-            {/* box 4 */}
-            <div className="w-[312px] h-[377px] mt-[125px] ">
-            <Image src={chair1} alt="chair"/>
-                    <div className="flex">
-                        <div className="w-[256px] h-[51px] mt-[10px] gap-[10px] ">
-                            <p className="font-bold text-[16px] leading-[20px]">Library Stool Chair</p>
-                            <p className="text-[18px] text-[#272343]">$20</p>
-                        </div>
-                        <Image src={cartall} alt="cart" className="ml-2"/>
-                        </div>
-                       
-                    </div>
-                    </div>
-                </div>
-
-        
+          </div>
+        ))}
+      </div>
     </div>
-)
+  );
 }
