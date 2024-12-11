@@ -13,7 +13,7 @@ export default function Header() {
     <div>
       {/* First Header */}
       <div className="bg-[#272343] text-white">
-        <div className="flex justify-between items-center max-w-screen-xl mx-auto py-2 px-4 lg:px-16">
+        <div className="flex justify-between items-center  max-w-screen-xl mx-auto py-2 px-4 lg:px-16">
           <div className="flex items-center gap-2 opacity-70">
             <TiTick className="text-xl" />
             <p className="text-sm font-bold">Free shipping on all orders over $50</p>
@@ -50,16 +50,17 @@ export default function Header() {
       </div>
 
       {/* Third Header */}
-      <div className="bg-white">
+      <div className="bg-white border-b">
         <div className="flex flex-wrap justify-between items-center max-w-screen-xl mx-auto py-4 px-4 lg:px-16">
           <ul className="flex gap-4 font-bold text-sm text-[#636270]">
             <li>
               <Link href="/" className="text-[#007580]">Home</Link>
             </li>
-            <li><Link href="/">Shop</Link></li>
+            <li><Link href="/shop">Shop</Link></li>
             <li><Link href="/product">Product</Link></li>
-            <li><Link href="/">Pages</Link></li>
+            <li><Link href="/pages">Pages</Link></li>
             <li><Link href="/About">About</Link></li>
+            <li><Link href="/Contact">Contact</Link></li>
           </ul>
           <ul className="flex gap-2 text-sm text-[#636270]">
             <li>Contact:</li>
