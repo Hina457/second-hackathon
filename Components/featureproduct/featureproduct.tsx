@@ -169,7 +169,7 @@ export default function Feature() {
     {/* Right Section - Small Images */}
     <div className="w-full grid grid-cols-2 gap-3 sm:gap-6">
       <div className="w-full h-auto">
-        <Image src={chair4} alt="Chair 4" className="w-full h-auto sm:h-[312px]" />
+        <Image src={chair4} alt="Chair 4" className="w-fulln h-auto sm:h-[312px]" />
       </div>
       <div className="w-full h-auto">
         <Image src={chair1} alt="Chair 1" className="w-full h-auto sm:h-[312px]" />

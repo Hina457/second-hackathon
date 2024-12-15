@@ -1,8 +1,8 @@
 
 
-import Hero from "../Components/Hero/Hero"
-import Feature from "../Components/featureproduct/featureproduct"
-import Ourproduct from "../Components/ourproduct/our"
+import Hero from "../components/Hero/Hero"
+import Feature from "../components/featureproduct/featureproduct"
+import Ourproduct from "../components/ourproduct/our"
 import Shop from "./shop/page"
 import Pages from "./pages/page"
 // import Explore from "../Components/Explore/Explore"
