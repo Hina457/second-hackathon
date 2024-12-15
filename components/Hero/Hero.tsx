@@ -1,15 +1,14 @@
 
 
-
 import Image from "next/image";
-import chair from "@/Components/public/chair.svg";
-import logo1 from "@/Components/public/logo1.svg";
-import logo2 from "@/Components/public/logo2.svg";
-import logo3 from "@/Components/public/logo-3.svg";
-import logo4 from "@/Components/public/logo4.svg";
-import logo5 from "@/Components/public/logo5.svg";
-import logo6 from "@/Components/public/logo6.svg";
-import logo7 from "@/Components/public/logo7.svg";
+import chair from "@/components/public/chair.svg";
+import logo1 from "@/components/public/logo1.svg";
+import logo2 from "@/components/public/logo2.svg";
+import logo3 from "@/components/public/logo-3.svg";
+import logo4 from "@/components/public/logo4.svg";
+import logo5 from "@/components/public/logo5.svg";
+import logo6 from "@/components/public/logo6.svg";
+import logo7 from "@/components/public/logo7.svg";
 
 export default function Hero() {
   return (

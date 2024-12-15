@@ -7,10 +7,10 @@
 
 
 
-import logo from "@/Components/public/logo.svg";
+import logo from "@/components/public/logo.svg";
 import { FaFacebook, FaTwitter, FaInstagram, FaPinterest, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
-import visa from "@/Components/public/visa.svg";
+import visa from "@/components/public/visa.svg";
 
 export default function Footer() {
   return (
