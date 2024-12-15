@@ -5,8 +5,8 @@
 import Image from "next/image";
 import { FaRegHeart } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import chair from "@/Components/public/chair3.svg";
-import chair5 from "@/Components/public/chair5.svg";
+import chair from "@/components/public/chair3.svg";
+import chair5 from "@/components/public/chair5.svg";
 
 export default function Shop() {
   return (

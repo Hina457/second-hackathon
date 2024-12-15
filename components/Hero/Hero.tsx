@@ -1,5 +1,6 @@
 
 
+
 import Image from "next/image";
 import chair from "@/components/public/chair.svg";
 import logo1 from "@/components/public/logo1.svg";

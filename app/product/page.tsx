@@ -1,19 +1,19 @@
 
 
 import Image from "next/image";
-import chair1 from "@/Components/public/chair1.svg";
-import chair2 from "@/Components/public/chair2.svg";
-import chair3 from "@/Components/public/chair3.svg";
-import chair4 from "@/Components/public/chair4.svg";
-import newicon from "@/Components/public/new.svg";
-import sale from "@/Components/public/sale.svg";
-import cart1 from "@/Components/public/cart1.svg";
-import cartall from "@/Components/public/cartall.svg";
-import cata2 from "@/Components/public/cata2.svg";
-import chair5 from "@/Components/public/chair5.svg";
-import chair6 from "@/Components/public/chair6.svg";
-import chair7 from "@/Components/public/chair7.svg";
-import newchair from "@/Components/public/newchair.svg";
+import chair1 from "@/components/public/chair1.svg";
+import chair2 from "@/components/public/chair2.svg";
+import chair3 from "@/components/public/chair3.svg";
+import chair4 from "@/components/public/chair4.svg";
+import newicon from "@/components/public/new.svg";
+import sale from "@/components/public/sale.svg";
+import cart1 from "@/components/public/cart1.svg";
+import cartall from "@/components/public/cartall.svg";
+import cata2 from "@/components/public/cata2.svg";
+import chair5 from "@/components/public/chair5.svg";
+import chair6 from "@/components/public/chair6.svg";
+import chair7 from "@/components/public/chair7.svg";
+import newchair from "@/components/public/newchair.svg";
 
 export default function Product() {
   return (

@@ -1,14 +1,14 @@
 
 
-import chair1 from "@/Components/public/chair1.svg"
+import chair1 from "@/components/public/chair1.svg"
 import Image from "next/image"
 import { TbTruckDelivery } from "react-icons/tb";
 import { CiCircleCheck } from "react-icons/ci";
 import { PiPlantLight } from "react-icons/pi";
 import { RiBankCardLine } from "react-icons/ri";
-import sofa from "@/Components/public/sofa234.svg"
-import parent from "@/Components/public/parent2.svg"
-import parent2 from "@/Components/public/parent3.svg"
+import sofa from "@/components/public/sofa234.svg"
+import parent2 from "@/components/public/parent2.svg"
+import parent3 from "@/components/public/parent3.svg"
 
 export default function About() {
     return (
@@ -61,13 +61,13 @@ export default function About() {
                     <p className="text-[#2A254B] mt-2">$99.00</p>
                 </div>
                 <div className="w-[305px] h-[462px] ">
-                    <Image src={parent2} alt="sofa"/>
+                    <Image src={parent2} alt="sofa2"/>
 
                     <p className="font-normal text-[20px] text-[#2A254B] mt-[10px]">The Dandy chair</p>
                     <p className="text-[#2A254B] mt-2">$99.00</p>
                 </div>
                 <div className="w-[305px] h-[462px] ">
-                    <Image src={parent} alt="sofa3"/>
+                    <Image src={parent3} alt="sofa3"/>
                     <p className="font-normal text-[20px] text-[#2A254B] mt-[10px]">The Dandy chair</p>
                     <p className="text-[#2A254B] mt-2">$99.00</p>
                 </div>
