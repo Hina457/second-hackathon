@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex justify-center items-center bg-[#F0F2F3] px-6 py-12">
+      <div className="flex justify-center items-center bg-[#F0F2F3] px-6 py-12 ">
         <div className="max-w-screen-xl w-full flex flex-col lg:flex-row justify-between items-center">
           {/* Left Content */}
           <div className="flex flex-col items-center lg:items-start w-full lg:w-1/2 space-y-6 text-center lg:text-left">

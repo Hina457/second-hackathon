@@ -33,6 +33,7 @@ export default function OurProduct() {
       <div className="text-center">
         <h1 className="text-2xl lg:text-3xl font-bold text-[#272343]">Our Products</h1>
       </div>
+      
 
       {/* Products Grid */}
       <div className="max-w-screen-xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
