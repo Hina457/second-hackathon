@@ -28,13 +28,13 @@ export default function Footer() {
               Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus.
             </p>
             <div className="flex gap-3">
-              <div className="w-10 h-10 flex items-center justify-center border border-[#007580] rounded-full">
-                <FaFacebook className="text-[#007580]" />
+              <div className="w-6 h-6 mb-6 flex items-center justify-center border border-[#007580] rounded-full">
+                <FaFacebook className="text-[#007580] hover:scale-105" />
               </div>
-              <FaTwitter className="text-lg" />
-              <FaInstagram className="text-lg" />
-              <FaPinterest className="text-lg" />
-              <FaYoutube className="text-lg" />
+              <FaTwitter className="text-lg hover:text-[#007580] hover:scale-105" />
+              <FaInstagram className="text-lg hover:text-[#007580] hover:scale-105" />
+              <FaPinterest className="text-lg hover:text-[#007580] hover:scale-105  " />
+              <FaYoutube className="text-lg hover:text-[#007580] hover:scale-105" />
             </div>
           </div>
 
@@ -42,10 +42,12 @@ export default function Footer() {
           <div className="w-full sm:w-1/2 lg:w-1/6">
             <h3 className="text-gray-500 text-base font-semibold">Category</h3>
             <ul className="mt-4 space-y-2 text-gray-700">
-              <li>Sofa</li>
-              <li>Armchair</li>
-              <li>Wing Chair</li>
-              <li>Park Bench</li>
+              <li className="hover:text-[#007580] ">Sofa</li>
+              <li  className="hover:text-[#007580]">Armchair</li>
+              <li  className="hover:text-[#007580]">Wing Chair</li>
+              <li  className="hover:text-[#007580]">Desk Chair</li>
+              <li  className="hover:text-[#007580]">Wooden Chair</li>
+              <li  className="hover:text-[#007580]">Park Bench</li>
             </ul>
           </div>
 
@@ -53,10 +55,10 @@ export default function Footer() {
           <div className="w-full sm:w-1/2 lg:w-1/6">
             <h3 className="text-gray-500 text-base font-semibold">Support</h3>
             <ul className="mt-4 space-y-2 text-gray-700">
-              <li>Help & Support</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Help</li>
+              <li className="hover:text-[#007580]">Help & Support</li>
+              <li className="hover:text-[#007580]">Terms & Conditions</li>
+              <li className="hover:text-[#007580]">Privacy Policy</li>
+              <li className="hover:text-[#007580]">Help</li>
             </ul>
           </div>
 
@@ -69,7 +71,7 @@ export default function Footer() {
                 placeholder="Your email"
                 className="w-full p-3 border rounded-md focus:ring-2 focus:ring-[#029FAE]"
               />
-              <button className="w-full py-3 bg-[#029FAE] text-white rounded-md hover:bg-[#027d85]">
+              <button className="w-full py-3 bg-[#029FAE] text-white rounded-md hover:bg-[#027d85] hover:scale-105">
                 Subscribe
               </button>
             </form>

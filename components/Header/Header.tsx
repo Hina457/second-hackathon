@@ -31,7 +31,7 @@ export default function Header() {
         <p>Eng</p>
         <Image src={vector} alt="vector" />
       </div>
-      <p>Faqs</p>
+      <p>  <Link href="/Faqs">Faqs</Link></p>
       <div className="flex items-center gap-1">
         <Image src={alert} alt="alertcircle" width={20} height={20} />
         <p>Need Help</p>
@@ -45,7 +45,7 @@ export default function Header() {
           <p>Eng</p>
           <Image src={vector} alt="vector" width={15} height={10} />
         </div>
-        <p>Faqs</p>
+        <p> <Link href="/Faqs">Faqs</Link></p>
         <div className="flex items-center gap-1">
           <Image src={alert} alt="alertcircle" width={20} height={20} />
           <p>Need Help</p>
@@ -64,7 +64,7 @@ export default function Header() {
           </div>
           <div className="flex items-center bg-white rounded-md px-3 py-2">
             <AiOutlineShoppingCart className="text-xl" />
-            <p className="font-bold ml-2">Cart</p>
+            <p className="font-bold ml-2"> <Link href="/Cart">Cart</Link></p>
             <div className="ml-2 w-6 h-6 flex items-center justify-center rounded-full bg-[#007580] text-white">
               2
             </div>
@@ -80,22 +80,22 @@ export default function Header() {
       <li>
         <Link href="./" className="text-[#007580]">Home</Link>
       </li>
-      <li><Link href="/shop">Shop</Link></li>
-      <li><Link href="/product">Product</Link></li>
-      <li><Link href="/pages">Pages</Link></li>
-      <li><Link href="/About">About</Link></li>
-      <li><Link href="/Contact">Contact</Link></li>
+      <li className="hover:text-[#007580]">Shop</li>
+      <li className="hover:text-[#007580]"><Link href="/product">Product</Link></li>
+      <li className="hover:text-[#007580]">Pages</li>
+      <li className="hover:text-[#007580]"><Link href="/About">About</Link></li>
+     
     </ul>
 
     {/* Contact Information */}
     <ul className="hidden lg:flex gap-2 text-sm text-[#636270]">
-      <li>Contact:</li>
+      <li className="font-bold hover:text-[#007580]"> <Link href="/Contact">Contact:</Link></li>
       <li className="text-[#272343]">(808) 555-0111</li>
     </ul>
 
     {/* Mobile Responsive Contact */}
     <div className="lg:hidden flex flex-col items-end gap-2 mt-4">
-      <p className="text-sm text-[#636270]">Contact: <span className="text-[#272343]">(808) 555-0111</span></p>
+      <p className="text-sm text-[#636270]"> <Link href="/Contact">Contact:<span className="text-[#272343]">(808) 555-0111</span></Link></p>
     </div>
   </div>
 </div>

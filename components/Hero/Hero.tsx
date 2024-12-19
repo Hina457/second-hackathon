@@ -28,7 +28,7 @@ export default function Hero() {
             <button className="bg-[#029FAE] text-white py-3 px-6 rounded-md flex items-center gap-4 hover:bg-blue-700">
               <span>Shop Now</span>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

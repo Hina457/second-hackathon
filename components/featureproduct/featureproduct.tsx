@@ -106,7 +106,7 @@ export default function Feature() {
   {/* Categories Grid */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {/* Category 1 */}
-    <div className="relative group">
+    <div className="relative group hover:scale-105">
       <Image src={cata1} alt="cata1" className="w-full h-auto rounded-md" />
       <div className="absolute bottom-0 left-0 w-full h-[85px] bg-black bg-opacity-75 flex flex-col justify-center px-4">
         <h1 className="text-white font-bold text-lg">Wing Chair</h1>
@@ -115,7 +115,7 @@ export default function Feature() {
     </div>
 
     {/* Category 2 */}
-    <div className="relative group">
+    <div className="relative group hover:scale-105">
       <Image src={cata2} alt="cata2" className="w-full h-auto rounded-md" />
       <div className="absolute bottom-0 left-0 w-full h-[85px] bg-black bg-opacity-75 flex flex-col justify-center px-4">
         <h1 className="text-white font-bold text-lg">Wooden Chair</h1>
@@ -124,7 +124,7 @@ export default function Feature() {
     </div>
 
     {/* Category 3 */}
-    <div className="relative group">
+    <div className="relative group hover:scale-105">
       <Image src={cata3} alt="cata3" className="w-full h-auto rounded-md" />
       <div className="absolute bottom-0 left-0 w-full h-[85px] bg-black bg-opacity-75 flex flex-col justify-center px-4">
         <h1 className="text-white font-bold text-lg">Desk Chair</h1>

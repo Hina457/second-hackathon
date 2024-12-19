@@ -20,59 +20,86 @@ export default function About() {
                     <button className="w-[179px] h-[56px] ml-[20px] lg:ml-[64px] bg-[#098591] text-white mt-[20px] lg:mt-[130px]">View Collection</button>
                 </div>
                 <div className="w-full lg:w-[619px] mt-[70px] lg:mt-[100px]">
-                    <Image src={chair1} alt="chair" width={480} height={478} className="mb-[16%]" />
+                    <Image src={chair1} alt="chair" width={480} height={400} className="mb-[17%] " />
                 </div>
             </div>
-            
-            <h1 className="font-bold text-[32px] text-center mt-[40px]">What Makes Our Brand Different</h1>
-            
-            <div className="w-full mt-[40px]  h-[244px] text-[#007580] gap-[15px] py-6 flex justify-center items-center">
-                {/* Add content or images here */}
-                <div className="w-[309px] h-[244px] bg-[#F9F9F9]">
-                <TbTruckDelivery className="mt-[30px] ml-[40px] w-[40px] h-[40px]"/>
-                <p className="font-bold text-[20px] mt-[10px] ml-[40px]">Next day as standard</p>
-                <p className="font-normal text-[16px] mt-[10px] ml-[40px]">Order before 3pm and get your order the next day as standard</p>
-                </div>
-                <div className="w-[309px] h-[244px] bg-[#F9F9F9]">
-                <CiCircleCheck className=" mt-[30px] ml-[40px] w-[40px] h-[40px]" />
-                <p className="font-bold text-[20px] mt-[10px] ml-[40px]">Made by true artisans</p>
-                <p className="font-normal text-[16px] mt-[10px] ml-[40px]">Handmade crafted goods made with real passion and craftmanship</p>
-                </div>
-                <div className="w-[309px] h-[244px] bg-[#F9F9F9]">
-                 <RiBankCardLine className=" mt-[30px] ml-[40px] w-[40px] h-[40px]" />
-                 <p className="font-bold text-[20px] mt-[10px] ml-[40px]">Unbeatable prices</p>
-                 <p className="font-normal text-[16px] mt-[10px] ml-[40px]">For our materials and quality you wont find better prices anywhere</p>
-                </div>
-                <div className="w-[309px] h-[244px] bg-[#F9F9F9]">
-                <PiPlantLight className=" mt-[30px] ml-[40px] w-[40px] h-[40px]"/>
-                <p className="font-bold text-[20px] mt-[10px] ml-[40px]">Recycled packaging</p>
-                <p className="font-normal text-[16px] mt-[10px] ml-[40px]">We use 100% recycled to ensure our footprint is more manageable</p>
-                </div>
-                
+            {/* next */}
+            <h1 className="font-bold text-[24px] sm:text-[28px] lg:text-[32px] text-center mt-[20px] sm:mt-[30px] lg:mt-[40px]">
+  What Makes Our Brand Different
+</h1>
 
-            </div>
-            {/* ouer popular product */}
-            <h1 className="font-semibold ml-[12%] mt-[6%] text-[32px] text-[#272343]">Our Popular Products </h1>
-            
-            <div className="w-full mt-[40px]  h-auto mb-[70px]  text-[#007580] gap-[15px] py-6 flex justify-center items-center">
-                <div className="w-[630px] h-[462px] ">
-                    <Image src={sofa} alt="sofa"/>
-                    <p className="font-normal text-[20px] text-[#2A254B] mt-[10px]">The Poplar suede sofa</p>
-                    <p className="text-[#2A254B] mt-2">$99.00</p>
-                </div>
-                <div className="w-[305px] h-[462px] ">
-                    <Image src={parent2} alt="sofa2"/>
+<div className="w-full mt-[20px] sm:mt-[30px] lg:mt-[40px] text-[#007580] gap-4 sm:gap-6 lg:gap-[15px] py-6 flex flex-wrap justify-center items-center">
+  {/* Card 1 */}
+  <div className="w-[90%] sm:w-[45%] lg:w-[309px] h-auto lg:h-[244px] bg-[#F9F9F9] p-6 flex flex-col items-start">
+    <TbTruckDelivery className="w-[40px] h-[40px] text-[#007580] mb-4" />
+    <p className="font-bold text-[18px] sm:text-[20px] mb-2">Next day as standard</p>
+    <p className="font-normal text-[14px] sm:text-[16px]">
+      Order before 3pm and get your order the next day as standard
+    </p>
+  </div>
 
-                    <p className="font-normal text-[20px] text-[#2A254B] mt-[10px]">The Dandy chair</p>
-                    <p className="text-[#2A254B] mt-2">$99.00</p>
-                </div>
-                <div className="w-[305px] h-[462px] ">
-                    <Image src={parent3} alt="sofa3"/>
-                    <p className="font-normal text-[20px] text-[#2A254B] mt-[10px]">The Dandy chair</p>
-                    <p className="text-[#2A254B] mt-2">$99.00</p>
-                </div>
-            </div>
-            
-        </div>
+  {/* Card 2 */}
+  <div className="w-[90%] sm:w-[45%] lg:w-[309px] h-auto lg:h-[244px] bg-[#F9F9F9] p-6 flex flex-col items-start">
+    <CiCircleCheck className="w-[40px] h-[40px] text-[#007580] mb-4" />
+    <p className="font-bold text-[18px] sm:text-[20px] mb-2">Made by true artisans</p>
+    <p className="font-normal text-[14px] sm:text-[16px]">
+      Handmade crafted goods made with real passion and craftmanship
+    </p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="w-[90%] sm:w-[45%] lg:w-[309px] h-auto lg:h-[244px] bg-[#F9F9F9] p-6 flex flex-col items-start">
+    <RiBankCardLine className="w-[40px] h-[40px] text-[#007580] mb-4" />
+    <p className="font-bold text-[18px] sm:text-[20px] mb-2">Unbeatable prices</p>
+    <p className="font-normal text-[14px] sm:text-[16px]">
+      For our materials and quality you wont find better prices anywhere
+    </p>
+  </div>
+
+  {/* Card 4 */}
+  <div className="w-[90%] sm:w-[45%] lg:w-[309px] h-auto lg:h-[244px] bg-[#F9F9F9] p-6 flex flex-col items-start">
+    <PiPlantLight className="w-[40px] h-[40px] text-[#007580] mb-4" />
+    <p className="font-bold text-[18px] sm:text-[20px] mb-2">Recycled packaging</p>
+    <p className="font-normal text-[14px] sm:text-[16px]">
+      We use 100% recycled to ensure our footprint is more manageable
+    </p>
+  </div>
+</div>
+
+            {/* our popular product */}
+            <h1 className="font-semibold text-center sm:text-left sm:ml-[12%] mt-[4%] sm:mt-[6%] text-[24px] sm:text-[28px] lg:text-[32px] text-[#272343]">
+  Our Popular Products
+</h1>
+
+<div className="w-full mt-[20px] sm:mt-[40px] h-auto mb-[40px] sm:mb-[70px] text-[#007580] gap-4 sm:gap-[15px] py-6 flex flex-wrap justify-center items-center">
+  {/* Product 1 */}
+  <div className="w-[90%] sm:w-[48%] lg:w-[630px] h-auto flex flex-col items-center">
+    <Image src={sofa} alt="sofa" className="w-full h-auto" />
+    <p className="font-normal text-[16px] sm:text-[18px] lg:text-[20px] text-[#2A254B] mt-[10px] text-center">
+      The Poplar suede sofa
+    </p>
+    <p className="text-[#2A254B] mt-2 text-[14px] sm:text-[16px] lg:text-[18px]">$99.00</p>
+  </div>
+
+  {/* Product 2 */}
+  <div className="w-[90%] sm:w-[48%] lg:w-[305px] h-auto flex flex-col items-center">
+    <Image src={parent2} alt="sofa2" className="w-full h-auto" />
+    <p className="font-normal text-[16px] sm:text-[18px] lg:text-[20px] text-[#2A254B] mt-[10px] text-center">
+      The Dandy chair
+    </p>
+    <p className="text-[#2A254B] mt-2 text-[14px] sm:text-[16px] lg:text-[18px]">$99.00</p>
+  </div>
+
+  {/* Product 3 */}
+  <div className="w-[90%] sm:w-[48%] lg:w-[305px] h-auto flex flex-col items-center">
+    <Image src={parent3} alt="sofa3" className="w-full h-auto" />
+    <p className="font-normal text-[16px] sm:text-[18px] lg:text-[20px] text-[#2A254B] mt-[10px] text-center">
+      The Dandy chair
+    </p>
+    <p className="text-[#2A254B] mt-2 text-[14px] sm:text-[16px] lg:text-[18px]">$99.00</p>
+  </div>
+</div>
+</div>
+
     )
 }
